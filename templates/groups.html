@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Groups</title>
+</head>
+<body>
+    <h2>Groups</h2>
+    <table border="1">
+        <tr>
+            <th>Group ID</th>
+            <th>Group Name</th>
+        </tr>
+        {% for g in groups %}
+        <tr>
+            <td>{{ g.Group_id }}</td>
+            <td>{{ g.Group_name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/dashboard">← Back to Dashboard</a>
+</body>
+</html>

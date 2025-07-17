@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Members List</title>
+</head>
+<body>
+    <h2>Members</h2>
+    <table border="1">
+        <tr>
+            <th>Member ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            <th>Group ID</th>
+        </tr>
+        {% for m in members %}
+        <tr>
+            <td>{{ m.Member_ID }}</td>
+            <td>{{ m[1] }}</td>
+            <td>{{ m.Gender }}</td>
+            <td>{{ m[3] }}</td>
+            <td>{{ m[4] }}</td></tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/dashboard">← Back to Dashboard</a>
+</body>
+</html>

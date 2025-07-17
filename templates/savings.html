@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Member Savings</title>
+</head>
+<body>
+    <h2>Member Savings</h2>
+    <table border="1">
+        <tr>
+            <th>Member ID</th>
+            <th>Member Name</th>
+            <th>Total Savings</th>
+        </tr>
+        {% for row in savings %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Loan</title>
+</head>
+<body>
+    <h2>Add Loan</h2>
+    <form method="POST">
+        <label>Member ID:</label><br>
+        <input type="text" name="member_id" required><br>
+
+        <label>Loan Amount:</label><br>
+        <input type="number" name="loan_amount" step="0.01" required><br>
+
+        <label>EWI (Equated Weekly Installment):</label><br>
+        <input type="number" name="ewi" step="0.01" required><br>
+
+        <label>Amount Paid:</label><br>
+        <input type="number" name="amount_paid" step="0.01" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
